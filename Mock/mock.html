@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+ <html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Mock</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://cdn.bootcss.com/Mock.js/1.0.1-beta2/mock.js"></script>
+    </head>
+    <body>
+        <p>missing</p>
+    </body>
+    <script>
+        // let num3 = parseInt(prompt('Nuber'));
+        // switch (num3) {
+        //     case 80:
+        //     case 90:
+        //     case 100:
+        //     console.log('100');    
+        //         break;
+        //     default:
+        //     console.log('没有符合的语句');
+        //         break;
+        // };
+        // let target = prompt();
+        // switch (target) {
+        //     case '猫':
+        //         console.log('喵喵喵')    
+        //         break;
+        //     case '狗' :
+        //         console.log('汪汪汪');
+        //     case '兔' :
+        //         console.log('噗噗噗');
+        //     default:
+        //         break;
+        // }
+        const scream = (animal) => {
+            switch (animal) {
+                case '狗':
+                    console.log('旺旺') ;       
+                    return 111;
+                case '猫':
+                    console.log('喵喵喵') ;       
+                    break;
+                case '鱼':
+                    console.log('ooo') ;   
+                    break;
+                case '虎':
+                    console.log('嗷嗷嗷') ;      
+                    break;
+                default:
+                    break;
+            }
+        };
+        function revser() {  
+            let str = '';
+            let num = window.prompt('input');
+            for (let i = num.length - 1; i >= 0; i--) {
+                str += transfer(num[i]);
+            };
+            console.log(str);    
+        }
+        function transfer(target) { 
+            switch (target) {
+                case '1':
+                    return "壹";
+                case '2':
+                    return "贰";
+                case '3':
+                    return '叁';
+                case '4':
+                    return "肆";
+                case '5':
+                    return "伍";
+                case '6':
+                    return "陆";
+                case '7':
+                    return "柒";
+                case '8':
+                    return "捌";
+                case '9':
+                    return "玖";
+                case '10':
+                    return "拾";
+            }
+        }
+    </script>
+</html>
